@@ -69,6 +69,7 @@
 
 .buttonContainer button:hover {
   background-color: #32167c;
+  border: none;
   outline: none;
 }
 
