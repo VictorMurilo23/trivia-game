@@ -115,7 +115,7 @@ class Settings extends Component {
                 </div>
               )
             }
-            <div className="buttonContainer">
+            <div className="buttonContainer buttonContainer2">
               <GoBackBtn history={ history } />
             </div>
           </div>
