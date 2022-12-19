@@ -5,6 +5,7 @@ import SettingsBtn from '../components/SettingsBtn';
 import requestTokenObj from '../services/requestToken';
 import { saveLoginInfoAction } from '../redux/actions';
 import HeaderAipim from '../components/HeaderAipim';
+import '../styles/Login.css';
 
 class Login extends Component {
   constructor() {
@@ -47,40 +48,50 @@ class Login extends Component {
         <HeaderAipim />
         <main className="login-body">
           <form className="login-form">
+            <div className="signInContainer">
+              <h2 className="signInH2">Sign In</h2>
+            </div>
 
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Email"
-              value={ email }
-              onChange={ this.handleChange }
-              data-testid="input-gravatar-email"
-            />
+            <div className="inputContainer">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email"
+                value={ email }
+                onChange={ this.handleChange }
+                data-testid="input-gravatar-email"
+              />
+            </div>
 
-            <input
-              type="text"
-              placeholder="Name"
-              id="name"
-              name="name"
-              value={ name }
-              onChange={ this.handleChange }
-              data-testid="input-player-name"
-            />
-
-            <button
-              type="button"
-              data-testid="btn-play"
-              disabled={ !this.validateLogin() }
-              onClick={ () => {
-                saveInfo(infoObj);
-                this.fetchToken();
-              } }
-            >
-              Play
-            </button>
+            <div className="inputContainer">
+              <input
+                type="text"
+                placeholder="Name"
+                id="name"
+                name="name"
+                value={ name }
+                onChange={ this.handleChange }
+                data-testid="input-player-name"
+              />
+            </div>
+            <div className="buttonContainer1 buttonContainer">
+              <button
+                type="button"
+                data-testid="btn-play"
+                disabled={ !this.validateLogin() }
+                onClick={ () => {
+                  saveInfo(infoObj);
+                  this.fetchToken();
+                } }
+              >
+                Play
+              </button>
+            </div>
+            <div className="buttonContainer2 buttonContainer">
+              <SettingsBtn history={ history } />
+            </div>
           </form>
-          <SettingsBtn history={ history } />
         </main>
       </>
 
