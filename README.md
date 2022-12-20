@@ -1,13 +1,32 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Trivia Game
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+## Introdução
+Um projeto de um jogo de perguntas, tipo Show do Milhão, feito para treinar o inglês.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+Esse projeto foi feito em conjunto com
+[Vinicius Castelo Branco](https://github.com/Vinicastelobranco), [Henos Vinicius](https://github.com/Henos19), [Ítalo Rezende](https://github.com/italorg), [Heitor Fernandes](https://github.com/heitorsfernandes).
+
+Todos os integrantes do grupo tiveram participação na lógica do projeto. Já o css foi feito por mim e o Henos.
+
+## Como utilizar
+Na tela inicial você tem duas opções, fazer o login ou mudar o tipo de pergunta que você irá receber.
+
+Em um primeiro uso eu recomendo só fazer o login, de preferência com um email que possua gravatar, e começar a jogar.
+
+Depois de fazer o login, você terá que responder 5 perguntas de múltipla escolha.
+
+Após responder todas as perguntas o seu resultado será mostrado.
+
+Bem simples, não acha?
+
+## Link do projeto
+https://trivia-game-amber.vercel.app/
+
+## Imagens do projeto
+![Login](images/login.png)
+
+![Game](images/game.png)
+
+![Pontuação](images/pontuacao.png)
+
+![Ranking](images/ranking.png)
